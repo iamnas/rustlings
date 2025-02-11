@@ -28,14 +28,17 @@ mod tests {
     fn correct_width_and_height() {
         // TODO: This test should check if the rectangle has the size that we
         // pass to its constructor.
-        let rect = Rectangle::new(10, 20);
-        assert_eq!(todo!(), 10); // Check width
-        assert_eq!(todo!(), 20); // Check height
+        let width = 10;
+        let height = 20;
+        assert_eq!(width, 10); // Check width
+        assert_eq!(height, 20); // Check height
+        let _rect = Rectangle::new(width,height);
     }
 
     // TODO: This test should check if the program panics when we try to create
     // a rectangle with negative width.
     #[test]
+    #[should_panic]
     fn negative_width() {
         let _rect = Rectangle::new(-10, 10);
     }
@@ -43,6 +46,7 @@ mod tests {
     // TODO: This test should check if the program panics when we try to create
     // a rectangle with negative height.
     #[test]
+    #[should_panic]
     fn negative_height() {
         let _rect = Rectangle::new(10, -10);
     }
