@@ -24,11 +24,13 @@ If you want to try Rustlings yourself, follow these steps:
 
 1. Install Rustlings:
    ```sh
-   cargo install --git https://github.com/rust-lang/rustlings rustlings
+   cargo install rustling
    ```
 2. Run the exercises:
    ```sh
-   rustlings watch
+   rustlings init
+   cd rustlings/
+   rustlings
    ```
    This will continuously check your progress as you complete each exercise.
 
